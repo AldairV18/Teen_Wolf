@@ -1,3 +1,4 @@
 if('serviceWorker' in navigator){
-    navigator.serviceWorker.register('sw.js');
+    navigator.serviceWorker.register('Teen_Wolf/sw.js');
+    console.log("entre al sw")
 }
