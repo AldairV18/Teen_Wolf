@@ -14,9 +14,19 @@
             "sizes":"32x32"
         },
         {
+            "src":"icons/48x48.png",
+            "type": "image/png",
+            "sizes":"48x48"
+        },
+        {
             "src":"icons/64x64.png",
             "type": "image/png",
             "sizes":"64x64"
+        },
+        {
+            "src":"icons/72x72.png",
+            "type": "image/png",
+            "sizes":"72x72"
         },
         {
             "src":"icons/128x128.png",
