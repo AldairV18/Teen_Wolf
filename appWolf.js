@@ -81,6 +81,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var opciones = document.getElementById('opciones');
     var estado = document.getElementById('estado');
     var poderesImg = document.getElementById('poderes');
+    const portadaImg = document.getElementById("portada");
 
     opciones.addEventListener('change', function() {
         estado.innerHTML = '';
@@ -98,12 +99,13 @@ document.addEventListener('DOMContentLoaded', function() {
     estado.addEventListener('change', function() {
         var estadoSeleccionado = this.value;
         var rutaPoderes = obtenerRutaPoderes(opciones.value, estadoSeleccionado);
-        poderesImg.src = rutaPoderes;
+        portadaImg.src = rutaPoderes;
     });
 
     function obtenerRutaPoderes(personaje, estado) {
         switch (`${personaje}:${estado}`) {
             case 'Scott McCall:Beta':
+                console.log('entre al 1')
                 return 'img/scottBeta.jpg';
             case 'Scott McCall:True Alpha':
                 return 'img/scottAlfa.jpg';
@@ -133,13 +135,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 return 'img/sheriff.webp';
             default:
                 console.log('adssafdas')
-                return 'wolf.ico';
+                return 'logo.jpg';
         }
-        
-
-        // Si no se encuentra una coincidencia, se puede devolver una imagen por defecto
-        // console.log("no hay coinsidencias")
-        // return 'wolf.ico';
     }
 
 
